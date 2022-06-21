@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <title>Dialog</title>
+    <link rel="stylesheet" href="dialog.css">
+</head>
+
+<body>
+
+    <button id="add_new_avatar" type="button" class="avatar-button avatar-button__add-new">+</button>
+
+    <dialog id="add_avatar_dialog">
+
+        <form method="dialog" id="get_avatar_image_form">
+            <header>
+                <div class="header-title">
+                    <!-- <span><img src="/user-profile.svg" alt="user-profile" class="profile"></span> -->
+                    <ion-icon name="person-add-outline"></ion-icon>
+                    <p>New user</p>
+                </div>
+                <button class="card--head-close_dialog">
+                    <ion-icon name="close-circle-outline"></ion-icon>
+                </button>
+            </header>
+            <div class="upload">
+                <div class="input">
+                    <label for="userimage">upload an image</label>
+                    <input id="userimage" type="file" accept=".jpg, .jpeg, .png" name="userimage">
+                </div>
+                <p> * maximum upload 1MB</p>
+            </div>
+            <div class="buttons">
+                <button class="btn-clear">clear</button>
+                <div>
+                    <button class="btn-cancel">cancel</button>
+                    <button type="submit" id="confirmBtn" class="btn-confirm">confirm</button>
+                </div>
+            </div>
+        </form>
+    </dialog>
+
+
+    <script type="text/javascript" src="./index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
